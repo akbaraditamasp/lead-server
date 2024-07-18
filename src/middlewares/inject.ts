@@ -13,7 +13,7 @@ export default function inject(sitesPath: string) {
     let site = await rxdb.db().sites.findOne(req.get("host")).exec();
 
     if (!site) {
-      const target = edge(req.get("host")!);
+      const target = edge(sitesPath, req.get("host")!);
       const publicStatic = express.static(
         join(sitesPath, req.get("host")!, "public")
       );

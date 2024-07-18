@@ -18,7 +18,7 @@ export default function server(sitesPath: string, port = 3000) {
     return (req as CustomRequest).site.public(req, res, next);
   });
 
-  app.get("*", route as RequestHandler);
+  app.get("*", route(sites) as RequestHandler);
 
   app.listen(port, () => {
     console.log("Lead server running on " + port);
