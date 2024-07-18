@@ -9,7 +9,7 @@ const program = new Command();
 program
   .name("lead-server")
   .description("Server for running lead project")
-  .version("0.8.0");
+  .version("1.0.0");
 
 program
   .command("start")
