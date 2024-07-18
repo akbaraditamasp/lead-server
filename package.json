@@ -1,0 +1,40 @@
+{
+  "name": "@akbaraditamasp/lead-server",
+  "version": "1.0.0",
+  "description": "Server for running lead project",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "lead-server": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/main.d.ts",
+  "keywords": [],
+  "author": "akbaraditamasp <akbaraditamasp@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akbaraditamasp/lead-server.git"
+  },
+  "homepage": "https://github.com/akbaraditamasp/lead-server",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "commander": "^12.1.0",
+    "edge.js": "^6.0.2",
+    "express": "^4.19.2",
+    "fast-glob": "^3.3.2",
+    "rxdb": "^15.28.0"
+  }
+}
