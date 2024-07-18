@@ -10,10 +10,10 @@
     "dist"
   ],
   "bin": {
-    "lead-server": "./dist/index.js"
+    "lead-server": "./dist/cli.js"
   },
   "main": "./dist/index.js",
-  "types": "./dist/main.d.ts",
+  "types": "./dist/index.d.ts",
   "keywords": [],
   "author": "akbaraditamasp <akbaraditamasp@gmail.com>",
   "repository": {
